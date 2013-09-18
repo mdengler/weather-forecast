@@ -1,6 +1,6 @@
 #! /bin/bash
 
-AREA_CODE=628886
+AREA_CODE=${AREA_CODE:-628886}
 
 CODE_TEXT_0="tornado"
 CODE_SYMBOL_0="☈☈"
