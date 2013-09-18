@@ -112,7 +112,7 @@ CODE_SYMBOL_47="isolated thundershowers"
 CODE_TEXT_3200="not available"
 CODE_SYMBOL_3200="not available"
 
-WEATHER_CACHE=/tmp/forecast
+WEATHER_CACHE=/tmp/forecast-$AREA_CODE
 CACHE_TTL=3000
 
 if ! [ -f $WEATHER_CACHE ] || [ $(($(stat --printf="%X" $WEATHER_CACHE 2>/dev/null) + $CACHE_TTL)) -lt $(date +%s) -o $(stat --printf="%s" $WEATHER_CACHE) -eq 0 ]
